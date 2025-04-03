@@ -7,7 +7,7 @@ export const NewCollections = () => {
   const[new_collection,setNew_collection]=useState([]);
    
   useEffect(()=>{
-      fetch('http://localhost:5001/newcollection')
+      fetch('https://ssrstylesbackend.onrender.com/newcollection')
         .then((response)=> response.json())
         .then((data) => setNew_collection(data))
   },[])

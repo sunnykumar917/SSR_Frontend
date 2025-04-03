@@ -6,7 +6,7 @@ const Popular = () => {
   const [popularProducts, setPopularProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5001/popularinwomen')
+    fetch('https://ssrstylesbackend.onrender.com/popularinwomen')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch popular products');
