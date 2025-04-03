@@ -1,0 +1,135 @@
+.footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .footer-logo {
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+  }
+  
+  .footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+  }
+  
+  .footer-links li {
+    cursor: pointer;
+  }
+  
+  .footer-social-icon {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-icon-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+  }
+  
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+  }
+  
+  .footer-copyright .copyright-text {
+    white-space: nowrap;
+  }
+  
+  
+  
+  /* Media Queries */
+  
+  @media (max-width: 1280px) {
+    .footer-logo {
+      font-size: 40px;
+    }
+  
+    .footer-links {
+      gap: 30px;
+      font-size: 18px;
+    }
+  
+    .footer-copyright {
+      width: 80px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .footer-logo {
+      font-size: 36px;
+    }
+  
+    .footer-links {
+      gap: 20px;
+      font-size: 16px;
+    }
+  
+    .footer-copyright {
+      width: 60px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Add more media queries as needed for smaller screen sizes */
+  /* Media Queries for max-width: 800px */
+
+@media (max-width: 800px) {
+    .footer-logo {
+      font-size: 30px;
+    }
+  
+    .footer-links {
+      gap: 15px;
+      font-size: 14px;
+    }
+  
+    .footer-copyright {
+      width: 40px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Media Queries for max-width: 500px */
+  
+  @media (max-width: 500px) {
+    .footer-logo {
+      font-size: 24px;
+    }
+  
+    .footer-links {
+      gap: 10px;
+      font-size: 12px;
+    }
+  
+    .footer-copyright {
+      width: 30px;
+      font-size: 12px;
+    }
+  }
+  

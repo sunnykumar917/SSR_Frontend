@@ -1,0 +1,317 @@
+.cartitems{
+    margin: 100px 170px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    font-weight: 600;
+    gap: 75px;
+    padding: 20px;
+    color: #454545;
+    font-size: 18px;
+    align-items: center;
+}
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 1px solid #e2e2e2; /* Add this line to create a border between products */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+}
+.carticon-product-icon{
+    height: 62px;
+}
+.cartitem-remove-icon{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.cartitems-quantity{
+    width: 64px;
+    height:50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+
+.cartitems .cartitems-format:last-child {
+    border-bottom: none;
+    }
+.cartitems-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display:flex;
+    gap: 40px;
+    margin-right: 200px;
+    flex-direction: column;
+}
+.cartitems-total-item{
+    display: flex;
+    padding: 15px 0px ;
+    justify-content: space-between;
+}
+.cartitems-total button{
+    width: 262px;
+    height: 58px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    background: #ff5a5a;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.cartitems-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartitems-promocode p {
+  color: #555;
+}
+
+.cartitems-promobox {
+  width: 100%;
+  max-width: 504px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.cartitems-promobox input[type="text"] {
+  flex: 1;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  margin-bottom: 10px; /* Add some margin between input and button */
+}
+
+.cartitems-promobox button {
+  width: 100%;
+  max-width: 170px;
+  height: 58px;
+  background: black;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Existing styles */
+
+@media (max-width: 1280px) {
+  .cartitems {
+    margin: 60px 50px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  .carticon-product-icon {
+    height: 50px;
+  }
+
+  .cartitem-remove-icon {
+    margin: auto;
+  }
+
+  .cartitems-promobox {
+    width: auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cartitems-promobox input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+  }
+
+  .cartitems-promobox button {
+    width: 120px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cartitems {
+    margin: 60px 80px;
+  }
+
+  .cartitems-format-main {
+    gap: 30px;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .carticon-product-icon {
+    height: 50px;
+  }
+
+  .cartitem-remove-icon {
+    margin: auto;
+  }
+
+  .cartitems-promobox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin-top: 15px;
+  }
+  
+  .cartitems-promobox input {
+    flex: 1;
+    width: 0; /* Allow the input to take up remaining space */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    margin-right: 10px; /* Add margin between input and button */
+  }
+  
+  .cartitems-promobox button {
+    width: auto; /* Allow the button to take up its natural width */
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .cartitems {
+    margin: 40px 30px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+    gap: 30px;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .carticon-product-icon {
+    height: 40px; /* Adjust height as needed */
+  }
+
+  .cartitem-remove-icon {
+    margin: auto;
+  }
+  
+  .cartitems-total h1,
+  .cartitems-total-item p,
+  .cartitems-total-item h3 {
+      font-size: 14px; /* Adjust the font size as needed */
+  }
+  .cartitems-total button {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 100%; /* Ensure button does not exceed container width */
+    height: 60px; /* Adjust the height as needed */
+}
+  .cartitems-promocode{
+    margin-left: -150px;
+  }
+  .cartitems-promobox {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column; /* Stack the input and button vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    padding-left: 10px; /* Adjust padding for smaller screens */
+}
+
+.cartitems-promobox input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px; /* Add some margin between input and button */
+}
+
+.cartitems-promobox button {
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+}
+
+
+}
+
+
+@media (max-width: 500px) {
+  .cartitems {
+    margin: 30px 15px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .carticon-product-icon {
+    height: 30px; /* Adjust height as needed */
+  }
+
+  .cartitem-remove-icon {
+    margin: auto;
+  }
+  .cartitems-total h1,
+  .cartitems-total-item p,
+  .cartitems-total-item h3 {
+      font-size: 11px; /* Adjust the font size as needed */
+  }
+  .cartitems-total button {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 100%; /* Ensure button does not exceed container width */
+    height: 40px; /* Adjust the height as needed */
+}
+
+  .cartitems-promobox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin-top: 15px;
+  }
+
+  .cartitems-promobox input {
+    flex: 1;
+    width: 0;
+    border: none;
+    outline: none;
+    font-size: 12px; /* Adjust font size as needed */
+    background: transparent;
+    margin-right: 10px;
+  }
+
+  .cartitems-promobox button {
+    width: auto;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 12px; /* Adjust font size as needed */
+  }
+}
