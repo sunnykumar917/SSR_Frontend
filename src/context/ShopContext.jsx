@@ -99,7 +99,7 @@ const ShopContextProvider = (props) => {
     const authToken = localStorage.getItem('auth-token');
     if (authToken) {
       // Send request to server to remove item from cart
-      fetch('https://ssrstyle-user.onrender.com/', {
+      fetch('https://ssrstyle-user.onrender.com/removefromcart', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
