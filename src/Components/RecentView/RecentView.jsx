@@ -5,7 +5,7 @@ const RecentView = () => {
 
   useEffect(() => {
     // Fetch recent views data from the backend
-    fetch('http://localhost:5001/recent-views') // Assuming the backend server is running on port 5001
+    fetch('https://ssrstyle-user.onrender.com/recent-views') // Assuming the backend server is running on port 5001
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch recent views');

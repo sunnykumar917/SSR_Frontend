@@ -17,7 +17,7 @@ const ShopContextProvider = (props) => {
 
   useEffect(() => {
     // Fetch all products when component mounts
-    fetch("http://localhost:5001/products")
+    fetch("https://ssrstyle-user.onrender.com/products")
       .then((response) => response.json())
       .then((data) => {
         setAllProducts(data);
@@ -30,7 +30,7 @@ const ShopContextProvider = (props) => {
     const fetchCartItems = async () => {
       try {
         if (localStorage.getItem('auth-token')) {
-          const response = await fetch("http://localhost:5001/getcart", {
+          const response = await fetch("https://ssrstyle-user.onrender.com/getcart", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const ShopContextProvider = (props) => {
     if (authToken) {
       try {
         // Send request to server to add item to cart
-        const response = await fetch('http://localhost:5001/addtocart', {
+        const response = await fetch('https://ssrstyle-user.onrender.com/addtocart', {
           method: 'POST',
           headers: {
             Accept: 'application/json',
@@ -99,7 +99,7 @@ const ShopContextProvider = (props) => {
     const authToken = localStorage.getItem('auth-token');
     if (authToken) {
       // Send request to server to remove item from cart
-      fetch('http://localhost:5001/removefromcart', {
+      fetch('https://ssrstyle-user.onrender.com/', {
         method: 'POST',
         headers: {
           Accept: 'application/json',

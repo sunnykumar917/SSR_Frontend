@@ -22,7 +22,7 @@ export const LoginSignup = () => {
     console.log("Login Function Executed", formData);
   
     try {
-      const response = await fetch('http://localhost:5001/login', {
+      const response = await fetch('https://ssrstyle-user.onrender.com/login', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -51,7 +51,7 @@ export const LoginSignup = () => {
   const signUp = async () => {
     console.log("Sign up function executed", formData);
     try {
-      const response = await fetch('http://localhost:5001/signup', {
+      const response = await fetch('https://ssrstyle-user.onrender.com/signup', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
